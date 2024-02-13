@@ -44,17 +44,18 @@ std::set<T> setUnion(std::set<T>& s1, std::set<T>& s2)
 /* Prototypes of functions defined in util.cpp */
 /***********************************************/
 
-std::string convToLower(std::string src);
+std::string convToLower(const std::string& src);
+
 
 std::set<std::string> parseStringToWords(std::string line);
 
 // Used from http://stackoverflow.com/questions/216823/whats-the-best-way-to-trim-stdstring
 // Removes any leading whitespace
-std::string &ltrim(std::string &s) ;
+std::string &ltrim(std::string &s);
 
 // Removes any trailing whitespace
-std::string &rtrim(std::string &s) ;
+std::string &rtrim(std::string &s);
 
 // Removes leading and trailing whitespace
-std::string &trim(std::string &s) ;
+std::string &trim(std::string &s);
 #endif

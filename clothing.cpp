@@ -11,9 +11,10 @@ std::set<std::string> Clothing::keywords() const {
 }
 
 std::string Clothing::displayString() const {
-    return name + "\nSize: " + size + " Brand: " + brand + "\n" + std::to_string(price) + " " + std::to_string(qty) + " left.";
+    return name_ + "\nSize: " + size_ + " Brand: " + brand_ + "\n" + std::to_string(price_) + " " + std::to_string(qty_) + " left.";
 }
 
 void Clothing::dump(std::ostream& os) const {
-    os << category_ << "\n" << name_ << "\n" << price_ << "\n" << qty_ << "\nSize: " << size_ << "\nBrand: " << brand_ << std::endl;
+    os << category_ << "\n" << name_ << "\n" << price_ << "\n" << qty_ << "\n" << size_ << "\n" << brand_ << std::endl;
 }
+
